@@ -23,7 +23,7 @@ Section - 2 : JavaScript  refresher
 Section - 3 : ReactJS  Essentials - Components, JSX, Props , State and more.
 
 
-Section - 4 : ReactJS  Essentials - Dep dive 
+Section - 4 : ReactJS  Essentials - Deep dive 
 
 Section - 5 : ReactJS  Essentials -Practice Project 
 
