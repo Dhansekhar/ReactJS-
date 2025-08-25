@@ -1,9 +1,10 @@
-import Header from "./Header";
-import CoreConcept from "./CoreConcept";
+import Header from "./Components/Header";
+import CoreConcept from "./Components/CoreConcept";
 import components from "./assets/components.png";
 import config from "./assets/config.png";
 import jsxui from "./assets/jsx-ui.png";
 import stateImg from "./assets/state-mgmt.png";
+import { CORE_CONCEPTS } from "./Data";
 function App() {
   return (
     <div>
@@ -13,14 +14,15 @@ function App() {
           <h2>Core Concepts</h2>
           <ul>
             <CoreConcept
-              image={components}
-              title={"COMPONENTS "}
-              discrption={`Components in ReactJS are the fundamental building blocks for 
-                creating user interfaces. They allow developers to break down complex UIs into smaller, 
-                reusable pieces, making the development process more efficient and scalable.`}
+              image={CORE_CONCEPTS[0].image}
+              title={CORE_CONCEPTS[0].title}
+              discrption={CORE_CONCEPTS[0].discrption}
             />
+             <CoreConcept {...CORE_CONCEPTS[1]}/>
+             <CoreConcept {...CORE_CONCEPTS[2]} />
+             <CoreConcept {...CORE_CONCEPTS[3]}/>
 
-            <CoreConcept
+            {/* <CoreConcept
               image={config}
               title={"PROPS "}
               discrption={`In React, props (short for "properties") are a fundamental mechanism for passing data from a parent component to a child component. 
@@ -43,7 +45,7 @@ function App() {
                  API responses, or changes in the component’s internal state. 
                 State is crucial for building interactive and dynamic user interfaces in React applications.`}
               // dhana={"Dhanasekhar"}
-            />
+            /> */}
 
             {/* <Props />
           <JsxFile />
